@@ -26,9 +26,6 @@ header .logo span {
     color: var(--pink);
     transition: .2s;
 }
-header .logo span:hover {
-    color: var(--purple);
-}
 
 header .navbar a {
     font-size: 1.7rem;
