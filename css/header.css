@@ -16,15 +16,25 @@ header {
 header .logo {
     font-size: 2rem;
     color: var(--purple);
+    transition: .2s;
 }
+header .logo:hover {
+    color: var(--pink);
+}
+
 header .logo span {
     color: var(--pink);
+    transition: .2s;
+}
+header .logo span:hover {
+    color: var(--purple);
 }
 
 header .navbar a {
     font-size: 1.7rem;
     color: var(--purple);
     margin-left: 2rem;
+    transition: .2s;
 }
 header .navbar a:hover {
     color: var(--pink);
