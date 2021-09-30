@@ -1,0 +1,86 @@
+section {
+    min-height: 100vh;
+    padding: 0 9%;
+    padding: 7.5rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/home-bg-img.png) no-repeat;
+    background-position: center;
+}
+
+.home .image img {
+    width: 40vw;
+    animation: asliddin 3s linear infinite;
+}
+
+@keyframes asliddin {
+        0%, 100% {
+            transform: translateY(0rem);
+        }
+        50% {
+            transform: translateY(-3.5rem);
+        }
+}
+
+.home .content h3 {
+    font-size: 5.5rem;
+    color: #333;
+    text-transform: uppercase;
+}
+.home .content h3 span {
+    color: var(--pink);
+    text-transform: uppercase;
+}
+
+.home .content p {
+    font-size: 1.7rem;
+    color: #333;
+    padding: 1rem 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1.1rem;
+    padding: 1rem 1.4rem;
+    border-radius: 5rem;
+    background: var(--gradient);
+    font-size: 1.6em;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+
+
+
+@media (max-width: 991px) {
+    section {
+        padding: 0 5%;
+        padding-top: 7.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-flow: column-reverse;
+    }
+
+    .home .image img {
+        width: 100%;
+    }
+
+
+    .home .content h3 {
+        font-size: 3.6rem;
+    }
+    .home .content p {
+        font-size: 1.5rem;
+    }
+}
